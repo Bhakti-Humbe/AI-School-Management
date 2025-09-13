@@ -1,0 +1,47 @@
+.notice-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.create-notice {
+  margin-bottom: 20px;
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create-notice select,
+.create-notice input,
+.create-notice textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.create-notice button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notice-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notice-list li {
+  border: 1px solid #007bff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.notice-date {
+  font-size: 0.8rem;
+  color: gray;
+}

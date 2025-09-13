@@ -1,0 +1,43 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%; /* instead of fixed height */
+  gap: 20px;    /* add some spacing */
+}
+
+.about-img {
+  width: 35%;              /* give fixed width */
+  height: 350px;    
+  background-image: url('/src/assets/ach1.jpg');       /* control height */
+  border-radius: 10px;     /* rounded corners */
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-text {
+  width: 60%;              /* keep text 60% */
+  color: black;
+  padding: 10px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

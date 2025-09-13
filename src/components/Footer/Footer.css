@@ -1,0 +1,50 @@
+/* Footer Base */
+.footer {
+  background: #1a1a1a;
+  color: #ddd;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+/* Container */
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Left Section */
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.footer-text {
+  max-width: 250px;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+
+/* Right Section */
+.footer-right {
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-right a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+  color: #4dabf7;
+}
+

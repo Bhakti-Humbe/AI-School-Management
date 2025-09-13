@@ -1,0 +1,64 @@
+.timetable-container {
+  padding: 20px;
+  background: #f8faff;
+}
+
+.selector {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.selector label {
+  font-weight: bold;
+}
+
+.selector select {
+  margin-left: 6px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.generate-btn {
+  background: #007bff;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.time-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.time-table th,
+.time-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  min-width: 110px;
+}
+
+.time-table th {
+  background: #007bff;
+  color: #fff;
+}
+
+.day-col {
+  font-weight: bold;
+  background: #e6f0ff;
+}
+
+.break-cell {
+  background: #ffe8a3;
+  font-weight: bold;
+}

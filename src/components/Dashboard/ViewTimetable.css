@@ -1,0 +1,37 @@
+.timetable-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.timetable-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+  text-align: center;
+}
+
+.timetable-table th,
+.timetable-table td {
+  border: 1px solid #007bff;
+  padding: 8px;
+}
+
+.timetable-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.timetable-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.timetable-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.timetable-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}

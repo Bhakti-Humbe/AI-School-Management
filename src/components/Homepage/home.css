@@ -1,0 +1,181 @@
+.home {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../../assets/homeimg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
+}
+
+.home-text
+{
+    position: absolute;
+    
+    justify-content: center;
+    align-items: center;
+    padding-left: 130px;
+    margin-top: 150px;
+
+}
+.home-text h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+
+.home-text p{
+    font-size: 2rem;
+    font-family: "Italianno", cursive;
+    color: black;
+}
+
+.explore-btn {
+  position: relative;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  border-width: 0px;
+  cursor: pointer;
+  color: black;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.explore-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start hidden to the left */
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  z-index: 0;
+  transition: left 0.4s ease;
+  border-radius: 10px;
+}
+
+.explore-btn:hover::before {
+  left: 0; /* Slide in from left */
+}
+
+.explore-btn:hover {
+  color: white; /* Change text color on hover */
+}
+
+.explore-btn span {
+  position: relative;
+  z-index: 1; /* Keep text above the sliding background */
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+  background: white;
+  gap:0px;
+}
+
+.feature-box {
+  flex: 1 1 18%;
+  background-color: #7cade1; /* Light green */
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: auto;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.feature-box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.video-container {
+  display: flex;
+  align-items:start;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.video-text {
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 2;
+}
+
+
+.admission-section {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, #3b79cb, #45c6da, #e7d3d3);
+}
+
+.admission-container {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admission-image {
+  width: 35%;
+  height: 80%;
+  background-image: url('/src/assets/admissionimg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admission-text {
+  width: 60%;
+  padding: 20px;
+  color: black;
+}
+
+.admission-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.admission-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.admission-text button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color:white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admission-text button:hover {
+  background-color: #007bff;
+  color: white;
+}
+

@@ -1,0 +1,86 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding: 10px 20px;
+  position: sticky;
+  background-color: white;
+  z-index: 1000; /* Ensure it's above other elements */
+  margin-bottom: 0;
+}
+
+.navbar ul {
+  display: flex;      
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.navbar li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar li:hover {
+  color: #007bff;
+}
+.button-group {
+  display: flex;       /* Arrange buttons in a row */
+  gap: 20px;           /* ✅ Space between buttons */
+  align-items: center; /* Optional: vertical centering */
+}
+
+
+.login-btn {
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color:#007bff;
+  /* border: 2px solid white; */
+  cursor: pointer;
+  color: white;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease, border 0.3s ease;
+  border: transparent;
+}
+
+.login-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start hidden to the left */
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1; /* Important: set to -1 to stay behind everything */
+  transition: left 0.4s ease;
+  /* border-radius: 20px; */
+}
+
+.login-btn:hover::before {
+  left: 0; /* Slide in from left */
+}
+
+.login-btn:hover {
+  color: black;
+   border: 2px solid black;
+}
+
+.login-btn span {
+  position: relative;
+  z-index: 1; /* Keep text above ::before */
+}
+
+.navbar a {
+  color: inherit;           /* Inherit color from parent (li or navbar) */
+  text-decoration: none;   /* Remove underline */
+}
+
+.navbar a:hover {
+  color: #007bff; /* Same hover color as your li:hover */
+} 
